@@ -1,2 +1,2 @@
 # Three-Preview-Card-Component
-Project From https://frontend.io
+Project From https://frontendmentor.io
