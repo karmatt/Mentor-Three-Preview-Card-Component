@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --very-light-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --lexend-font: "Lexend Deca", cursive;
+    --shoulders-font: "Big Shoulders Display", cursive;
+}
+body {
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+img {
+    max-width: 80%;
+    margin-top: 1rem;
+}
+button {
+    margin-bottom: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 20px;
+    border: transparent 2px solid;
+    font-family: var(--lexend-font);
+    cursor: pointer;
+}
+button:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: var(--very-light-gray) 2px solid;
+}
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+.container {
+    margin: 12px auto;
+    height: 100%;
+    max-width: 300px;
+}
+.vehicle {
+    padding: 1rem 2rem;
+
+}
+.vehicle--sedan {
+    background-color: var(--bright-orange);
+}
+.vehicle--suv {
+    background-color: var(--dark-cyan);
+}
+.vehicle--luxury {
+    background-color: var(--very-dark-cyan);
+}
+.vehicle__type {
+    color: var(--very-light-gray);
+    font-family: var(--shoulders-font);
+    font-size: 2.25rem;
+    margin: 1.2rem 0;
+    letter-spacing: 3px;
+}
+.vehicle__description {
+    color: var(--transparent-white);
+    margin-bottom: 0.7rem;
+    line-height: 1.75;
+    font-family: var(--lexend-font);
+}
+.button--orange {
+    color: var(--bright-orange);
+}
+.button--cyan {
+    color: var(--dark-cyan);
+}
+.button--dark-cyan {
+    color: var(--very-dark-cyan);
+}
+.attribution__link {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    button {
+        font-size: 0.8rem;
+    }
+    .container {
+        margin: 5rem auto;
+        max-width: 650px;
+    }
+    .vehicle__description {
+        margin-bottom: 4rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    img {
+        max-width: 100%;
+    }
+    button {
+        margin-bottom: 2.5rem;
+    }
+    .container {
+        max-width: 875px;        
+    }
+    .vehicle__type {
+        font-size: 2.5rem;
+    }
+    .vehicle__description {
+        font-size: 1rem;
+    }
+}
